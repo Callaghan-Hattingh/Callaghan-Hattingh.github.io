@@ -9,10 +9,11 @@ body {
 	font-family: Tahoma, sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-}
-
-#page-wrapper {
-    position: relative;
+    /*
+    background-image: url(picture002.jpg);
+    background-size: cover;
+    background-position: fixed;
+    */
 }
 
 a {
@@ -21,41 +22,81 @@ a {
 }
 
 /** global classes styling **/
+/* Menubar */
+.menubar {
+    background-color:  #736b7c;
+    color: black;
+    text-align: center;
+    position: fixed;
+    Top: 0;
+    width: 100%;
+}
+
+.menubar ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.menubar ul li {
+    width: 245px;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+}
+
+.menubar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menubar ul li:hover {
+    background-color: #9a4df7;
+    border-radius: 3px;
+}
+
+.menubar ul li a:hover{
+    color: white;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+/* Containers */
 
 .container {
-    max-width: 1000px;
+    max-width: 750px;
     width: 100%;
     margin: 150px auto;
 }
 
-.grid {
-    display: flex;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    min-height: 75px;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    width: 100%; /* Full width */
+.container ol li {
+    margin: 15px;
 }
   
+/* Footer */
 
-
-#header {
-	font-size: 12px;
-	font-style: normal;
-	font-family: Tahoma, sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-	line-height: 1.5;
-	text-align: left;
+.footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
 }
+
+
 
 
 
